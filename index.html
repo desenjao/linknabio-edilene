@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Imagens</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+        .profile-container {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .profile-container img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .profile-container div {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #333;
+        }
+        .bio-link {
+            margin-top: 10px;
+            font-size: 1em;
+            color: #007BFF;
+            text-decoration: none;
+        }
+        .product-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .product {
+            text-align: center;
+            margin: 10px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+            padding: 1rem; /* Adicionando espaçamento interno */
+            width: 220px; /* Define uma largura fixa para os produtos */
+        }
+        .product a {
+            text-decoration: none; /* Remove o sublinhado do link */
+            color: inherit; /* Herda a cor do texto */
+        }
+        .product img {
+            width: 200px;
+            height: auto;
+            cursor: pointer;
+            border-radius: 8px 8px 0 0;
+        }
+        .product img:hover {
+            transform: scale(1.05);
+        }
+        .descricao {
+            margin: 10px 0;
+            font-size: 1.1em;
+            color: #666;
+        }
+        .preco {
+            font-size: 1.2em;
+            font-weight: bold;
+            color: #333;
+            margin-top: 0.5rem; /* Espaçamento entre a descrição e o preço */
+        }
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+        @media (max-width: 600px) {
+            .product img {
+                width: 150px;
+            }
+            .profile-container img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="profile-container">
+        <img src="https://amway.com.br/medias/sys_master/root/h22/h81/9766972620830/9766972620830.jpg" alt="Foto de Perfil">
+        <div>Edilene Oliveira</div>
+    </div>
+    <p class="descricao">Mais Vendidos</p>
+    <div class="product-container">
+        <div class="product">
+            <a href="https://amway.com.br/pt/Glister-Creme-Dental-Multi-Action/p/124106/00880249382" target="_blank">
+                <img src="https://amway.com.br/medias/sys_master/root/h64/hb4/9667730472990/310-124106.jpg" alt="Creme Dental Multi-Action">
+                <div class="descricao">Creme Dental Multi-Action</div>
+                <div class="preco">R$41,00</div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="https://amway.com.br/pt/Glister-Spray-refrescante-bucal/p/124111/00880249382" target="_blank">
+                <img src="https://amway.com.br/medias/sys_master/root/h1e/h90/9695191433246/480-124111.jpg" alt="Spray Refrescante Bucal">
+                <div class="descricao">Spray Refrescante Bucal</div>
+                <div class="preco">R$29,00</div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="https://amway.com.br/pt/SA8-Detergente-em-po-3kg/p/109849/00880249382" target="_blank">
+                <img src="https://amway.com.br/medias/sys_master/images/images/hbe/ha6/8797071867934/8797071867934.jpg" alt="Detergente em Pó SA8">
+                <div class="descricao">Detergente em Pó SA8</div>
+                <div class="preco">R$249,00</div>
+            </a>
+        </div>
+        <div class="product">
+            <a href="https://amway.com.br/pt/LOC-Limpador-Multiuso-Amway-Home/p/E0001/00880249382" target="_blank">
+                <img src="https://amway.com.br/medias/sys_master/root/hd0/h9e/9519433154590/480x480-loc.png" alt="Limpador Multiuso LOC">
+                <div class="descricao">Limpador Multiuso LOC</div>
+                <div class="preco">R$86,00</div>
+            </a>
+        </div>
+    </div>
+    <a class="bio-link" href="https://amway.com.br/pt/lojavirtual/Edilene-Dos-01" target="_blank">Ver Minha Loja Completa</a>
+</body>
+</html>
